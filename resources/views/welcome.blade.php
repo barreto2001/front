@@ -217,4 +217,4 @@
         </div>
     </div>
 </section>
-@include('layouts.footer')
+@include('components.footer')
