@@ -1,3 +1,4 @@
+{{-- Footer --}}
 <footer class="mc-100">
     <div class="container">
         <div class="row">

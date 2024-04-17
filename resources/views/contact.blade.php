@@ -1,8 +1,10 @@
+{{-- Pagina de contacto --}}
 @include('layouts.app')
 <h1 class="text-center">Contacto</h1>
 
 <section class="container mt-5">
     <div class="row">
+        {{-- Información de contacto --}}
         <div class="col-md-4">
             <div class="mt-3">
                 <h5>Correo Electrónico</h5>
@@ -28,7 +30,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
-
+                {{-- Formulario de contacto --}}
                 <div class="card-body">
                     <form method="POST" action="#">
                         @csrf

@@ -1,3 +1,4 @@
+{{-- Pagina de portafolio --}}
 @include('layouts.app')
 
 <h1 class="text-center">Portafolio de servicios</h1>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
-
+/* Controlador de crud de productos */
 class PortFolioController extends Controller
 {
     /**

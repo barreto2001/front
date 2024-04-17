@@ -1,3 +1,5 @@
+/* Expandir modal y obtner información del producto */
+
 function modalEdit(id) {
     let url = document.getElementById("url").value;
     alert(url+"/"+id);
