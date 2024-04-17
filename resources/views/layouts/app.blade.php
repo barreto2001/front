@@ -23,6 +23,9 @@
 
     {{-- Link de estilos generales --}}
     <link rel="stylesheet" href="{{ asset('./css/app.css') }}">
+
+    {{-- Script de jquery --}}
+    <script src="{{ asset('./js/jquery-3.7.1.min.js') }}"></script>
 </head>
 
 <body>

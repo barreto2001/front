@@ -22,11 +22,12 @@ Route::get('/contacto', function () {
     return view('contact');
 })->name('contact');
 
-Route::get('/portafolio', function () {
+/* Route::get('/portafolio', function () {
     $portfolio = Portfolio::all();
     return view('portfolio', ['portfolio',$portfolio]);
-})->name('portfolio')->middleware('auth');
+})->name('portfolio')->middleware('auth'); */
 
+Route::get('/portafolio', [App\Http\Controllers\PortFolioController::class, 'index'])->name('portfolio')->middleware('auth');
 
 
 Auth::routes();
@@ -41,4 +42,3 @@ Route::delete('/cita/{id}', [App\Http\Controllers\CitaController::class, 'destro
 Route::put('/cita/{id}', [App\Http\Controllers\CitaController::class, 'update'])->name('cita.update')->middleware('auth');
 
  */
-Route::post('/historial', [App\Http\Controllers\HistorialController::class, 'store'])->name('historial.store');

@@ -12,9 +12,15 @@ class PortFolioController extends Controller
      */
     public function index()
     {
-        $portfolio = Portfolio::all();
+        $portfolio = null;
+        
+        if(auth()->user()->rol == 1){
+            $portfolio = Portfolio::all();
+        }else{
+            $portfolio = Portfolio::latest()->takes(3)->get();
+        }
 
-        return response()->json(200, $portfolio);
+        return view('portfolio',['portfolio' => $portfolio]);
     }
 
     /**

@@ -21,4 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('portfolio', [App\Http\Controllers\PortFolioController::class, 'index'])->name('portfolio.index');
+Route::get('portfolio/{$id}', [App\Http\Controllers\PortFolioController::class, 'show'])->name('portfolio.show');
 

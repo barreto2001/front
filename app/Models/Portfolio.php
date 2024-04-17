@@ -9,7 +9,7 @@ class Portfolio extends Model
 {
     use HasFactory;
 
-    protected $table = 'rol';
+    protected $table = 'portfolio';
 
     /**
      * The attributes that are mass assignable.
@@ -18,10 +18,10 @@ class Portfolio extends Model
      */
     protected $fillable = [
         'id',
-        'name',
         'smallDescription',
         'description',
-        'iamge'
+        'image',
+        'title'
     ];
 
     public $timestamps = false;
